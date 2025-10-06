@@ -23,7 +23,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
  sections.forEach(sec => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 150; // biar lebih pas
+    let offset = sec.offsetTop - 150; 
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
@@ -41,7 +41,6 @@ header.classList.toggle('sticky', window.scrollY > 100);
 const filterBtns = document.querySelectorAll(".filter-btn");
 const portfolioItems = document.querySelectorAll(".portfolio-box");
 
-// fungsi filter
 function filterPortfolio(category) {
   portfolioItems.forEach(item => {
     if (item.classList.contains(category)) {
@@ -52,7 +51,6 @@ function filterPortfolio(category) {
   });
 }
 
-// default tampil kategori pertama (website)
 filterPortfolio("website");
 
 filterBtns.forEach(btn => {
