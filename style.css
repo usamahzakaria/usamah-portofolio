@@ -296,6 +296,12 @@ span {
     margin: 1rem 0 2rem;
 }
 
+.about-content a {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+
 .skills {
     min-height: auto;
     padding-bottom: 7rem;

@@ -48,7 +48,7 @@ function filterPortfolio(category) {
     } else {
       item.style.display = "none";
     }
-  });
+  }); 
 }
 
 filterPortfolio("website");
@@ -62,8 +62,6 @@ filterBtns.forEach(btn => {
     filterPortfolio(filter);
   });
 });
-
-
 
 ScrollReveal({
     reset: true,
